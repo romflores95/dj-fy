@@ -1,8 +1,23 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+.header-footer {
+  background: #00B7FF;
+  color: white;
+
+}
+
+.dj-fy {
+  padding: 20px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
