@@ -16,7 +16,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(__dirname, 'public/images', 'tapRootIcon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'tapRootIcon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
