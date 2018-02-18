@@ -7,7 +7,7 @@ var router = express.Router();
 // });
 
 router.get('/', function(req, res){
-  res.render('index.html');
+  res.render('index', {title: 'homepage'});
 });
 
 module.exports = router;
