@@ -33,3 +33,13 @@ a {
 .padded {
   padding: 3vw;
 }
+
+.large-form {
+  height: 14vw !important;
+  font-size: 8vw !important;
+
+}
+
+.form-button {
+  margin:auto;
+}
