@@ -1,6 +1,6 @@
 body {
   /* padding: 50px; */
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -10,11 +10,17 @@ a {
 .header-footer {
   background: #00B7FF;
   color: white;
+  padding: 20px;
+  
+}
 
+.large-title {
+  font-size: 50px;
 }
 
 .dj-fy {
   padding: 20px;
+  font-size: 80px;
 }
 
 .centered-text {
@@ -25,3 +31,6 @@ a {
   padding: 20px;
 }
 
+.padded {
+  padding: 20px;
+}
