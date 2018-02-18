@@ -14,12 +14,15 @@
 
     <h2 class="centered-text large-title padded">Let your voice be heard tonight!</h2>
 
-    <!--         FORMS         -->
-    <form class="centered-forms padded">
+
+
+
+    <!--         FORM         -->
+    <form class="centered-forms padded" action="../savePreference" method="post">
         <!-- genre selection -->
-        <div class="form-group ">
-          <label for="exampleFormControlSelect1">What genre do you want to hear?</label>
-          <select class="form-control large-form">
+        <div class="form-group">
+          <label for="genre">What genre do you want to hear?</label>
+          <select id="genre" name="genre" type="text" class="form-control large-form">
             <option>Pop</option>
             <option>Hip-Hop/Rap</option>
             <option>Latin</option>
@@ -30,15 +33,24 @@
 
         <!-- Request a song -->
         <div class="form-group">
-            <label for="exampleInputPassword1">Request a song!</label>
-            <input class="form-control large-form" placeholder="Song Title">
+            <label for="song">Request a song!</label>
+            <input type="text" id="song" name="song" class="form-control large-form" placeholder="Song Title"/>
         </div>
-
+        <input class="btn btn-primary" id=submit-button type="submit" value="Submit">
     </form>
 
-    <div class="form-button">
-        <input class="btn btn-primary" type="submit" value="Submit">
-    </div>
+
+
+
+
+    <!-- Create a new Party (move to a secret page) -->
+    <form action="../saveParty" method="post">
+        <label for="name">Party Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" />
+        
+        <input class="btn btn-primary" id='add-party' type="submit" value="Submit">
+    </form>
+
     <!--         FOOTER         -->
     <div class="header-footer centered-text">
         <p>Created by Romeo Flores</p>
@@ -46,5 +58,6 @@
 
   </body>
 
+  <script src="javascripts/index.js"></script>
 
   </html>

@@ -14,12 +14,20 @@ var users = require('./routes/users');
 
 var app = express();
 
+//Set up mongoose connection
+const mongoose = require('mongoose');
+
+var mongoDB = 'mongodb://romeo:dj-fypassword@ds239648.mlab.com:39648/dj-fy';
+mongoose.connect(mongoDB);
+mongoose.Promise = global.Promise;
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-// uncomment after placing your favicon in /public
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
