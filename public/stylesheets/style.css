@@ -1,5 +1,4 @@
 body {
-  /* padding: 50px; */
   font: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -15,12 +14,12 @@ a {
 }
 
 .large-title {
-  font-size: 50px;
+  font-size: 10vw;
 }
 
 .dj-fy {
-  padding: 20px;
-  font-size: 80px;
+  padding: 2vw;;
+  font-size: 20vw;
 }
 
 .centered-text {
@@ -28,9 +27,9 @@ a {
 }
 
 .centered-forms {
-  padding: 20px;
+  font-size: 10vw;
 }
 
 .padded {
-  padding: 20px;
+  padding: 3vw;
 }
