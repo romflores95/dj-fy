@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: rgb(68, 0, 255);
 }
 
 
@@ -12,9 +12,10 @@ a {
 }
 
 .header-footer {
-  background: #00B7FF;
+  background: rgb(68, 0, 255);
   color: white;
   padding: 20px;
+  box-shadow: 0vw 0.8vw 1vw black;
   
 }
 
@@ -31,6 +32,7 @@ a {
   padding-top: 4vw;
   padding-bottom: 5vw;
   font-size: 20vw;
+  text-shadow: 0.8vw 0.8vw 1vw black;
 }
 
 .centered-text {
@@ -39,10 +41,12 @@ a {
 
 .centered-forms {
   font-size: 10vw;
+  color: rgb(68, 0, 255);
+  text-shadow: 0.1vw 0.1vw .01vw black;
 }
 
 .padded {
-  padding: 3vw;
+  padding: 5vw;
 }
 
 .large-form {
@@ -64,4 +68,8 @@ a {
 
 #submit-button {
   font-size: 6vw;
+  padding: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: rgb(68, 0, 255);
 }
