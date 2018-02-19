@@ -6,6 +6,13 @@ a {
   color: #00B7FF;
 }
 
+@media only screen and (max-width: 2000px) {
+  .chart-container {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
 .header-footer {
   background: #00B7FF;
   color: white;
@@ -17,8 +24,14 @@ a {
   font-size: 10vw;
 }
 
+.medium-title {
+  font-size: 5vw;
+}
+
 .dj-fy {
-  padding: 2vw;;
+  padding: 2vw;
+  padding-top: 4vw;
+  padding-bottom: 5vw;
   font-size: 20vw;
 }
 
@@ -35,11 +48,22 @@ a {
 }
 
 .large-form {
-  height: 14vw !important;
+  height: 15vw !important;
   font-size: 8vw !important;
 
 }
 
 .form-button {
   margin:auto;
+}
+
+
+#button-holder {
+  text-align: center;
+  margin: auto;
+
+}
+
+#submit-button {
+  font-size: 6vw;
 }

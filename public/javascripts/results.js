@@ -27,7 +27,7 @@ get('/party', {}, function(party) {
 
     // render party name
     const partyName = document.getElementById("party-name");
-    partyName.innerHTML = party.name;
+    partyName.innerHTML = party.name + " Top Genre Requests";
 
     // update data
 
@@ -45,7 +45,7 @@ get('/party', {}, function(party) {
 
     // TODO Abstract into function
     // For a pie chart
-    var ctx = document.getElementById("myChart");
+    var ctx = document.getElementById("genre-chart");
 
     var myPieChart = new Chart(ctx,{
         type: 'pie',
@@ -63,6 +63,9 @@ get('/party', {}, function(party) {
             }
           }
     });
+
+    
+
 
     },
     function(error){ console.log(error);});
