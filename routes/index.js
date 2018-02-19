@@ -21,7 +21,7 @@ router.get('/results', function(req, res){
 router.post('/savePreference', function(req, res){
   console.log(req.body);
 
-  Party.findOne({}, {}, { sort: {'created_at' : -1 } }, function(err, doc) {
+  Party.findOne({}, {}, { sort: {'date' : -1 } }, function(err, doc) {
     //TODO smelly code. Update to generalize genres
     if (req.body.genre === 'Pop'){
       doc.pop += 1;
@@ -45,7 +45,7 @@ router.post('/savePreference', function(req, res){
 
     doc.songs.push(req.body.song);
 
-    doc.save( function (err, updatedDoc){
+    doc.save( function (err, doc){
       if (err) console.log(err)
     })
 
@@ -56,7 +56,7 @@ router.post('/savePreference', function(req, res){
 
 // save new party
 router.post('/saveParty', function(req, res){
-  console.log("saving story");
+  console.log("saving party");
 
   const party = new Party({
     'name' : req.body.name
@@ -67,6 +67,20 @@ router.post('/saveParty', function(req, res){
   })
   res.render('results', {title: 'results'});
 })
+
+router.get('/party', function(req, res){
+  console.log("getting party data")
+
+
+  Party.findOne({}, {}, { sort: {'date' : -1 } }, function(err, doc) {
+    if (err) console.log(err);
+    res.send(doc);
+    }
+  )
+}
+
+
+)
 
 
 module.exports = router;
