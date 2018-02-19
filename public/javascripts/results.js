@@ -27,7 +27,7 @@ get('/party', {}, function(party) {
 
     // render party name
     const partyName = document.getElementById("party-name");
-    partyName.innerHTML = party.name + " Top Genre Requests";
+    partyName.innerHTML = " Top Genre Requests";
 
     // update data
 
@@ -57,7 +57,7 @@ get('/party', {}, function(party) {
             layout: {
                 padding: {
                     top: 0,
-                    bottom: 250
+                    bottom: 500
                 }},
             pieceLabel: {
                 position: 'outside',
