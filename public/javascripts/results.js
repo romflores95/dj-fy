@@ -56,11 +56,10 @@ get('/party', {}, function(party) {
             },
             layout: {
                 padding: {
-                    top: 80,
-                    bottom: 80
+                    top: 0,
+                    bottom: 250
                 }},
             pieceLabel: {
-                // arc: true,
                 position: 'outside',
                 overlap: true,
                 render: 'label',
