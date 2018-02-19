@@ -54,12 +54,20 @@ get('/party', {}, function(party) {
             legend: {
                 display: false
             },
+            layout: {
+                padding: {
+                    top: 80,
+                    bottom: 80
+                }},
             pieceLabel: {
-              render: 'label',
-              fontSize: 20,
-              fontStyle: 'bold',
-              fontColor: '#000',
-              fontFamily: '"Lucida Console", Monaco, monospace'
+                // arc: true,
+                position: 'outside',
+                overlap: true,
+                render: 'label',
+                fontSize: 40,
+                fontStyle: 'bold',
+                fontColor: '#000',
+                fontFamily: '"Lucida Console", Monaco, monospace'
             }
           }
     });
